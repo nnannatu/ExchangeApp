@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% extends 'base.html' %}
 
-    <link rel="stylesheet" href="../static/css/styles.css" />
-    <title>Currency Exchange Rate App</title>
-</head>
-<body>
-    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <div class="container">
-            <a href="../" class="navbar-brand">Currency Exchange <span style="color: rgb(39, 117, 161);"><strong>App</strong></span></a>
-            <a href="../" class="navbar-tech">[ Bootswatch - Vanilla JavaScript ]</a>
-        </div>
-    </div>
+{% block title %} Nnanna Exchange {% endblock %}
 
+{% block content %}
     <br><br><br>
-    <div id="jumbotron" class="jumbotron">
-        <h1 id="devise" class="display-5">Devise</h1>
-        <h5>Exchange Rate Converter</h5>
-        <img src="image.jpg" class="image" alt="Currency Exchange" />
+    <div id="jumbotron" class="jumbotron text-center">
+        <h1 id="devise" class="display-5">Exchange Rate Converter</h1>
     </div>
 
     <div class="container">
@@ -67,6 +53,7 @@
                 <option value="MXN">MXN</option>
                 <option value="MYR">MYR</option>
                 <option value="NOK">NOK</option>
+                <option value="NGN">NGN</option>
                 <option value="NZD">NZD</option>
                 <option value="PAB">PAB</option>
                 <option value="PEN">PEN</option>
@@ -135,6 +122,7 @@
                 <option value="MXN">MXN</option>
                 <option value="MYR">MYR</option>
                 <option value="NOK">NOK</option>
+                <option value="NGN">NGN</option>
                 <option value="NZD">NZD</option>
                 <option value="PAB">PAB</option>
                 <option value="PEN">PEN</option>
@@ -160,17 +148,4 @@
             <input type="number" id="amount-two" placeholder="0" value="1" />
         </div>
     </div>
-
-    <br><br><br>
-    <footer id="footer">
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Designed by <a href="https://github.com/nnannatu">Nnanna Atu &copy; 2020</a>.</p>
-                <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/master/LICENSE">MIT License</a>.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../static/js/script.js"></script>
-</body>
-</html>
+{% endblock %}
